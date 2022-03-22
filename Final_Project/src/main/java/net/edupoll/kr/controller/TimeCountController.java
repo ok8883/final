@@ -20,7 +20,7 @@ public class TimeCountController {
 	
 	@RequestMapping("/message/data")
 	@ResponseBody
-	public List<Object[]> timeCountHandler(Model model) {
+	public List<Object[]> timeCountHandler() {
 		List<Object[]> ret = timeCountService.getTimeCount(); 
 		
 		Gson gson = new Gson();
